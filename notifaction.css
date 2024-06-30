@@ -1,0 +1,59 @@
+Notification.css:
+
+.notification-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  display: none;
+}
+
+.notification {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  position: relative;
+}
+
+.btn-ok {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-ok:hover {
+  background-color: #3e8e41;
+}
+
+
+// Booking confirmation notification
+function showBookingConfirmation() {
+  notificationContainer.style.display = 'block';
+  bookingConfirmation.style.display = 'block';
+}
+
+// Seat availability alert notification
+function showSeatAvailabilityAlert() {
+  notificationContainer.style.display = 'block';
+  seatAvailabilityAlert.style.display = 'block';
+}
+
+// Close notification
+function closeNotification() {
+  notificationContainer.style.display = 'none';
+  bookingConfirmation.style.display = 'none';
+  seatAvailabilityAlert.style.display = 'none';
+}
+
+// Add event listeners
+document.addEventListener('booking-confirmed', showBookingConfirmation);
+document.addEventListener('seat-availability-alert', showSeatAvailabilityAlert);
+document.querySelectorAll('.btn-ok').forEach((btn) => {
+  btn.addEventListener('click', closeNotification);
+});

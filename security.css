@@ -1,0 +1,62 @@
+UserAuthentication.css:
+
+.login-container {
+  width: 300px;
+  margin: 50px auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-form label {
+  margin-bottom: 10px;
+}
+
+#login-form input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+#login-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#login-btn:hover {
+  background-color: #3e8e41;
+}
+
+UserAuthentication.js:
+
+const loginForm = document.getElementById('login-form');
+const usernameInput = document.getElementById('username');
+const passwordInput = document.getElementById('password');
+const loginBtn = document.getElementById('login-btn');
+
+loginForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const username = usernameInput.value;
+  const password = passwordInput.value;
+  // Implement authentication logic here
+  // ...
+  // If authentication is successful, redirect to dashboard
+  window.location.href = 'dashboard.html';
+});
+
+// Encrypt password using JavaScript encryption library (e.g., Crypto-JS)
+function encryptPassword(password) {
+  const encryptedPassword = CryptoJS.AES.encrypt(password, 'secret_key');
+  return encryptedPassword.toString();
+}

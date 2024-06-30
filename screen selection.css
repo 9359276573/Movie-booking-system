@@ -1,0 +1,28 @@
+ScreenSelection.css:
+
+.screen-selection {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.screen-selection select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.seat-limit {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.seat-limit p {
+  margin-bottom: 10px;
+}
+
+.seat-limit #remaining-seats {
+  font-weight: bold;
+  color: #00698f;
+}
+
+  

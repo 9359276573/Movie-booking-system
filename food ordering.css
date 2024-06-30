@@ -1,0 +1,64 @@
+Menu Display CSS:
+  
+  .menu-container {
+    width: 80%;
+    margin: 40px auto;
+  }
+  
+  .menu-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-container li {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-to-cart {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #3e8e41;
+  }
+  Add to Cart CSS:
+  
+  .cart-container {
+    width: 80%;
+    margin: 40px auto;
+  }
+  
+  .cart-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-container li {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .remove-from-cart {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .remove-from-cart:hover {
+    background-color: #c0392b;
+  }
+  
+  

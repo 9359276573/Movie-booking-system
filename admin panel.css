@@ -1,0 +1,64 @@
+AdminPanel.html:
+
+<div class="admin-panel">
+  <h2>Admin Panel</h2>
+  <nav>
+    <ul>
+      <li><a href="#screen-management">Screen Management</a></li>
+      <li><a href="#booking-management">Booking Management</a></li>
+      <li><a href="#food-menu-management">Food Menu Management</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <div id="screen-management">
+      <!-- Screen management content -->
+    </div>
+    <div id="booking-management">
+      <!-- Booking management content -->
+    </div>
+    <div id="food-menu-management">
+      <!-- Food menu management content -->
+    </div>
+  </div>
+</div>
+
+AdminPanel.css:
+
+.admin-panel {
+  width: 80%;
+  margin: 40px auto;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content {
+  padding: 20px;
+}
+
+#screen-management, #booking-management, #food-menu-management {
+  display: none;
+}
+
+/* Show the selected section */
+.admin-panel .content > div:target {
+  display: block;

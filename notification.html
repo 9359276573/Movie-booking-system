@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Notification</title>
+    <script>
+        Notification.js:
+
+const notificationContainer = document.querySelector('.notification-container');
+const bookingConfirmation = document.querySelector('#booking-confirmation');
+const seatAvailabilityAlert = document.querySelector('#seat-availability-alert');
+
+    </script>
+    <link rel="stylesheet" href="notification.css">
+</head>
+<body>
+    <div class="notification-container">
+        <div class="notification" id="booking-confirmation">
+          <h2>Booking Confirmation</h2>
+          <p>Your booking has been successful!</p>
+          <button class="btn-ok">OK</button>
+        </div>
+        <div class="notification" id="seat-availability-alert">
+          <h2>Seat Availability Alert</h2>
+          <p>Sorry, your selected seats are no longer available.</p>
+          <button class="btn-ok">OK</button>
+        </div>
+      </div>
+</body>
+</html>
+
+
+
